@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 
 <body>
@@ -21,9 +22,30 @@
             Cadastrar
         </a>
     </div>
-    <main>
+    <section>
+        <form action="index.html" class="formulario">
+            <div class="linha-formulario">
+                <label class="label-grande" for="nome">Nome:</label>
+                <input name="nome" id="nome" type="text" required>
+            </div>
 
-    </main>
+            <div class="linha-formulario">
+                <label class="label-grande" for="telefone">Telefone:</label>
+                <input name="telefone" id="telefone" type="text" required>
+            </div>
+
+            <div style="display: flex;" class="linha-formulario linha-experiencia">
+                <label class="label-grande" for="experiencia">Experiência Prévia:</label>
+                <div>
+                    <input type="radio" name="experiencia-sim" id="experiencia-sim"> <label for="experiencia-sim">Sim</label>
+                    <br>
+                    <input type="radio" name="experiencia-nao" id="experiencia-nao"> <label for="experiencia-nao">Nao</label>
+                </div>
+            </div>
+
+            <input type="submit" value="Salvar">
+        </form>
+    </section>
 </body>
 
 </html>
