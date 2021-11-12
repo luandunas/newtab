@@ -69,6 +69,7 @@ function drawTable(){
 				<button onclick="deleteUser(${index})">
 					Excluir
 				</button>
+				<a href="form.html?person=${index}"><button>Editar</button></a>
 			</td>
 
 		</tr>`
